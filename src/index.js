@@ -110,10 +110,7 @@ class ECharts extends Component {
         baseUrl: this.props.baseUrl
       };
     } else {
-      source =
-        Platform.OS == "ios"
-          ? require("./index.html")
-          : { uri: "file:///android_asset/index.html" };
+      source = require("./index.html");
     }
 
     return (
